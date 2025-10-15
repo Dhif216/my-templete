@@ -6,7 +6,7 @@ export const AboutPage = () => {
     <section class="relative h-[60vh] min-h-[500px] flex items-center overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-arctic-blue to-lapland-earth">
         <div class="absolute inset-0 bg-cover bg-center opacity-50" 
-             style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1920 1080%22%3E%3Crect fill=%22%234a5859%22 width=%221920%22 height=%221080%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2248%22 fill=%22white%22 opacity=%220.7%22%3EFamily at Farm with Horses%3C/text%3E%3C/svg%3E')">
+             style="background-image: url('https://images.unsplash.com/photo-1692299213737-18145e864336?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvcnNlJTIwc25vd3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600')">
         </div>
       </div>
       
