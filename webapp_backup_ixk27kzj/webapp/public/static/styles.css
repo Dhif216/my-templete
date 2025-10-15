@@ -1,0 +1,167 @@
+/* Custom CSS for Laenlammen Tila Website */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Custom prose styles for blog content */
+.prose-arctic {
+  color: #1f2937;
+}
+
+.prose-arctic h2 {
+  color: #1e3a5f;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose-arctic h3 {
+  color: #1e3a5f;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-arctic p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose-arctic ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose-arctic li {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+
+/* Image hover effects */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a8d5e2;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a5f;
+}
+
+/* Loading animation for images */
+.bg-cover,
+.bg-center {
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+/* Button hover effects */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+  outline: 2px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+/* Card shadow effects */
+.shadow-lg:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #1e3a5f, #a8d5e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: #ff6b35;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #ff6b35;
+  color: white;
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
